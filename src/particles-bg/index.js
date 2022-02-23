@@ -1,10 +1,10 @@
-import ParticlesBg from "./ParticlesBg";
+import ParticlesBg from "./ParticlesBg.vue";
 
 const components = {
-  ParticlesBg: ParticlesBg
+  ParticlesBg: ParticlesBg,
 };
 
-const install = function(Vue) {
+const install = function (Vue) {
   if (install.installed) return;
 
   for (let key in components) {
@@ -18,7 +18,7 @@ if (typeof window !== "undefined" && window.Vue) {
 
 const VueParticlesBg = {
   install,
-  ...components
+  ...components,
 };
 
 export { ParticlesBg };
